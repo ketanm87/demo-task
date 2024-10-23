@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.cdnfonts.com/css/muli-2?styles=58457,58462,58461,58460,58463,58464,58466,58465,58458,58459"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="loader loading"></div>
+    <div class="container-fluid bg-primary-brand">
+        <nav>
+            <div class="navbarToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="white"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                    </path>
+                </svg>
+            </div>
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="">
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Smart Gear</a></li>
+                <li><a href="#">Accesories</a></li>
+            </ul>
+            <div class="cart">
+                <img src="./assets/images/cart.png" alt="">
+                <span>10</span>
+            </div>
+        </nav>
+    </div>
+
+    <section class="title-section d-flex">
+        <div class="title">
+            <h1>Men's Outerwear</h1>
+            <div></div>
+        </div>
+        <div class="category_banner">
+        </div>
+    </section>
+
+    <section class="list-section d-flex">
+        <div class="filters-listing-wrapper">
+            <div class="breadcrumb_wrapper ml-30">
+                <ul class="breadcrumb">
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Womens</a></li>
+                    <li>Outerwear</li>
+                </ul>
+            </div>
+            <div class="filter_wrapper ml-30">
+                <div class="filter-label">
+                    <h2>Filters</h2>
+                    <div>
+                        <svg id="filterIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-filter" viewBox="0 0 16 16">
+                            <path
+                                d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </div>
+                    <hr class="separator">
+                </div>
+                <div class="filter-menu">
+                    <div>
+                        <h3>Search</h3>
+                        <div>
+                            <input type="search" id="search">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Price</h3>
+                        <div>
+                            <input type="number" id="minPriceFilter" min="0" placeholder="0" pattern="^[0-9]*$">
+                            <input type="number" id="maxPriceFilter" max="1000" placeholder="1000" pattern="^[0-9]*$">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Categories</h3>
+                        <div id="checkboxList">
+                            <!-- <label class="checkbox-container">
+                                One
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-container">
+                                One
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label> -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="product-listing-wrapper">
+            <div class="counter-with-filter">
+                <span>38 Results</span>
+                <div class="custom-select">
+                    <select name="sortByPrice" id="sortByPrice">
+                        <option value="highToLow">High to Low</option>
+                        <option value="lowToHigh">Low to High</option>
+                    </select>
+                </div>
+            </div>
+            <div class="listing" id="listing">
+                <div class="product-card">
+                    <img class="product-image" src="./assets/images/product-image.jpeg" alt="">
+                    <h4>Product Nmae</h4>
+                    <h5>Product Nmae</h5>
+                    <div>
+                        <img class="favorite" src="./assets/images/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-image" src="./assets/images/product-image.jpeg" alt="">
+                    <h4>Product Nmae</h4>
+                    <h5>Product Nmae</h5>
+                    <div>
+                        <img class="favorite" src="./assets/images/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-image" src="./assets/images/product-image.jpeg" alt="">
+                    <h4>Product Nmae</h4>
+                    <h5>Product Nmae</h5>
+                    <div>
+                        <img class="favorite" src="./assets/images/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-image" src="./assets/images/product-image.jpeg" alt="">
+                    <h4>Product Nmae</h4>
+                    <h5>Product Nmae</h5>
+                    <div>
+                        <img class="favorite" src="./assets/images/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-image" src="./assets/images/product-image.jpeg" alt="">
+                    <h4>Product Nmae</h4>
+                    <h5>Product Nmae</h5>
+                    <div>
+                        <img class="favorite" src="./assets/images/heart.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="product-image" src="./assets/images/product-image.jpeg" alt="">
+                    <h4>Product Nmae</h4>
+                    <h5>Product Nmae</h5>
+                    <div>
+                        <img class="favorite" src="./assets/images/heart.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <!-- <ul>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                </ul> -->
+                <button id="loadMore">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h3>Account</h3>
+            <ul>
+                <li><a href="">Sign In</a></li>
+                <li><a href="">Registration</a></li>
+                <li><a href="">Order Status</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="">Our Story</a></li>
+                <li><a href="">Career</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Help</h3>
+            <ul>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Order Status</a></li>
+                <li><a href="">Returns</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Follow Us!</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, rem. Labore, eos quidem delectus, nemo
+                aliquam rem quos sunt nostrum incidunt aut, nulla facere minima natus maxime fuga accusamus ab.
+            </p>
+            <div class="social-icons">
+                <img src="./assets/images/instagram.svg" alt="">
+                <img src="./assets/images/facebook.svg" alt="">
+                <img src="./assets/images/twitter.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer-section">
+        <h2>VENIA</h2>
+        <span>© Company Name Address Ave, City Name, State ZIP</span>
+        <div>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy Policy</a>
+        </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
